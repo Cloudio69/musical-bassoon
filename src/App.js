@@ -9,6 +9,7 @@ function App() {
       <div className="expense-items">
         {data.map((item) => (
           <ExpensesItems
+            key={item.id}
             title={item.title}
             amount={item.amount}
             date={item.date}
